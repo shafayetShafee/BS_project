@@ -1,0 +1,819 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+  oneside]{report}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{Times New Roman}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  colorlinks=true,
+  linkcolor={NavyBlue},
+  filecolor={Maroon},
+  citecolor={LimeGreen},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[top=1in,bottom=1in,right=1in,left=1.5in]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+
+% Provides support for setting the spacing between lines in a document. Package options include singlespacing, onehalfspacing, and doublespacing. 
+\usepackage{setspace}
+
+% we can refer to figure, tables etc without specificing the type. See~\cref{tbl:mytable} produces “See table 1”.
+\usepackage[longtable]{multirow}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage[round]{natbib}
+\usepackage[width=\textwidth]{caption}
+% \setlength\parindent{24pt}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	First page
+%-------------------------------------------------------------------------------
+
+\pagenumbering{gobble}  % not to use numbering in this title
+
+\begin{center}
+\huge{\textbf{Association between level of caregivers' stimulation and socio-emotional development of under-five children in Bangladesh}}\\
+
+\vspace*{1.5\baselineskip}
+
+\textbf\Large{{Submitted by}}\\
+\vspace{2mm}
+\Large{Roll: FH-033-011\\
+\vspace{2mm}
+4th year B.S.(Honors) in Applied Statistics\\
+\vspace{2mm}
+Session: 2020-2021}\\
+
+\vspace*{1.5\baselineskip}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=4cm, height=5.2cm]{../logo/logo.JPG}
+\end{figure}
+
+
+\vspace*{1.5\baselineskip}
+
+\large{This project report is submitted in partial fulllment of the requirement for}\\
+\large{the degree of B.S Honors in Applied Statistics.} \\
+\vspace*{2\baselineskip}
+\Large{Institute of Statistical Research and Training (ISRT) \\
+University of Dhaka} \\
+\Large{April, 2022}\\
+
+\end{center}
+
+\newpage
+
+%-------------------------------------------------------------------------------
+%	Second page
+%-------------------------------------------------------------------------------
+
+
+\begin{center}
+\huge{\textbf{Association between level of caregivers' stimulation and socio-emotional development of under-five children in Bangladesh}}\\
+
+\vspace*{1.5\baselineskip}
+
+\textbf\Large{{Submitted by}}\\
+\vspace{2mm}
+\Large{Roll: FH-033-011\\
+\vspace{2mm}
+4th year B.S.(Honors) in Applied Statistics\\
+\vspace{2mm}
+Session: 2020-2021}\\
+
+\vspace*{1.5\baselineskip}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=4cm, height=5.2cm]{../logo/du_logo_high.JPG}
+\end{figure}
+
+
+\vspace*{1.5\baselineskip}
+
+\large{This project report is submitted in partial fulllment of the requirement for}\\
+\large{the degree of B.S Honors in Applied Statistics.} \\
+\vspace*{2\baselineskip}
+\Large{Institute of Statistical Research and Training (ISRT) \\
+University of Dhaka} \\
+\Large{April, 2022}\\
+
+\end{center}
+
+\newpage
+
+
+%-------------------------------------------------------------------------------
+%	Abstract
+%-------------------------------------------------------------------------------
+
+
+\vspace*{2\baselineskip}
+
+\begin{center}
+\Huge{Abstract}
+\end{center}
+
+\vspace*{1\baselineskip}
+
+\fontsize{12pt}{18pt}\selectfont{
+Children are the cornerstone of a country's long-term development. The Sustainable Development Goals (SDGs) focuses on ensuring the highest possible quality of early childhood development (ECD) and a child's socio-emotional development is a crucial component of childhood development. Child's socio-emotional is facilitated by stimulating caregiving activities. This study aimed to assess the association between caregivers' stimulation activities and child's socio-emotional development in Bangladesh using data from latest round of Multiple Indicator Cluster Survey (MICS 2019). The sample comprised 9445 children aged 3 and 4 years. Children were considered to be on track with respect to socio-emotional development if they got along well with other children, did not kick or bite other children, and did not get easily distracted. Caregivers' stimulation level was derived from six stimulation activities and was measured by the number of different activities that the caregivers engaged in with the child in the 3 days preceding the survey. Binary logistic regression analysis was used to assess the association between child's socio-emotional development and caregivers' stimulation level after adjusting for possible individual and demographic background characteristics.A second model was fit containing binary covariates representing each of the six stimulation activities to investigate their separate effects on the outcome. This study found that caregivers' stimulation level is negatively associated with child's socio-emotional development and among the various activities, only singing with child was found to be positively associated with the outcome. The study concludes that the type of activity and not the number of activities is perhaps more important in positively influencing socio-emotional development in under-five children. Since the data used are cross sectional, causality can not be drawn from this association. Additional thorough cohort studies are required to fully comprehend the association at question.
+}
+
+{
+\hypersetup{linkcolor=NavyBlue}
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\setstretch{1.5}
+\newpage
+
+\listoftables
+
+\newpage
+
+\pagenumbering{arabic}
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+In the first five years of life, children grow and develop substantially in all four domains of development. These areas are physical, literacy-numeracy, learning, and socio-emotional. Among them, socio-emotional development refers to a child experience, expression, and management of emotions and the ability to communicate and build relationships with others \citep{cohen2005early}.
+
+Social and emotional development involves the acquisition of a set of skills. Among the most important are the abilities to:
+
+\begin{itemize}
+\tightlist
+\item
+  Recognize and comprehend one's own emotions
+\item
+  Accurately sense and interpret people' emotional states
+\item
+  In a constructive manner, manage intense emotions and their expressions.
+\item
+  Regulate one's own behavior
+\item
+  Empathize with other people.
+\item
+  Create and maintain relationships
+\end{itemize}
+
+Children's fundamental cognitive and socio-emotional characteristics are created
+during their early years. Between birth and the age of five, children develop a set of age-appropriate essential cognitive skills that enable them to maintain attention, comprehend and follow directions, communicate with others, and handle more sophisticated problems. And throughout this time period, the quality of a child's home environment and interactions with mother, father and caregivers play a significant role in their development. Early warm and responsive relationships with caregivers and peers can assist children in developing fundamental social and emotional competencies, such as the ability to get along with others and manage negative emotions and aggressive behaviors on their own \citep{grantham2007developmental, walker2011inequality}. Child's encounters with responsive caregivers serve a critical neurological function, and these interactions can aid in their cognitive, physical, social, and emotional development \citep{britto2017nurturing}. Adult involvement in activities with children and the environment in which children are cared for are crucial aspects in this context.
+
+In cognitions and practices, caregiving is manifested. Additionally, caregiving is multifaceted, modular, and individualized \citep{bornstein2006parenting}. Beginning in infancy, children learn about the physical world through cognitive interactions, and children are motivated to connect with others through socio-emotional interactions. Many investigators have operationally distinguished cognitive and socio-emotional caregiving domains \citep{bornstein2006parenting}. These two broad types of caregiving are relatively independent of one another and developmentally significant because they relate to children's communicative, mental, emotional, and social competencies \citep{national2000neurons, walker2007child}.
+
+Generally, cognitive caregiving consists of the variety of strategies parents
+employ in stimulating children to engage and understand the environment by describing and demonstrating and providing children with opportunities to learn \citep{bornstein2012cognitive}. The MICS 2019 asks about mothers' specific cognitive
+caregiving practices in terms of reading, telling stories, and naming, counting, and drawing with their young children \citep{mics}. Whereas, socio-emotional caregiving includes activities that engage children in interpersonal interactions \citep{bornstein2012cognitive}. Through openness, listening, and emotional closeness, parents make their children feel valued, accepted, and approved of. The MICS asks specifically about parents' socio-emotional caregiving in terms of playing with children, singing songs, and taking children with them out of doors. Adults influence the development of child play in many ways: by provisioning the play environment, modeling, engaging children actively and symbolically, responding to children's overtures, and scaffolding more advanced play. When children play with more mature caregivers, they are furnished with models, stimulants, materials, and opportunities to perform at levels above those they may achieve on their own \citep{vygotsky1978mind}.
+
+\hypertarget{background-of-the-study}{%
+\section{Background of the Study}\label{background-of-the-study}}
+
+According to \citet{black2017early}, 43\% (250 million) of children under the age of five in low- and middle-income nations are at risk of not developing to their full potential. This percentage is a warning sign that all global educational targets, as well as other relevant sustainable development goals, are at risk. Non-optimal developmental status has a detrimental impact on educational attainment and production, resulting in a poverty and development cycle that spans generations \citep{engle2007strategies}. In low- and middle-income (LAMI) countries, insufficient opportunities for cognitive stimulation at home have been identified as a risk factor for child development, whereas increased educational and language stimulation at home, both of which are critical for cognitive and socio-emotional parenting, has been identified as a protective factor \citep{wachs2013nature}.
+
+Parents' activities are geared toward meeting their children's biological, physical, cognitive, and socio-emotional needs. Caregiving is critical to early childhood development because it regulates the majority of child--environment interactions and contributes to the shaping of child adaption \citep{bornstein2006parenting}. The immediate environment (parents, siblings, and caregivers), local settings (home and school), and external systems (for example, parents' workplace) all have an effect on the child's socio-emotional development. Multiple theories of human development, for example, attachment theory \citep{bowlby1969attachment}, the bioecological model of human development \citep{bronfenbrenner2007bioecological} and relational developmental
+systems theory \citep{overton2015processes}, have long emphasized the importance of caregivers-child interactions as a critical proximal process for supporting children's development.
+
+The home is the first and most vital environment in which children interact and spend their time, and it is at this period that developmental milestones occur. Thus, it is essential for early childhood development that parents and other caregivers provide a stimulating environment through caring care \citep{black2017early}. Responsive parenting activities with children such as reading, singing, and playing are associated positively with language development, cognitive performance, and social abilities \citep{yousafzai2014effect} and involvement of parents is positively associated with cognitive and socio-emotional development in the preschool period \citep{maggi2010social}. Caregiving activities are directly linked to children's cognitive and socioemotional development and play a key influence in children's later academic achievement, skill acquisition, and well-being \citep{behrman2013economic}.
+
+Existing research from economically and culturally diverse countries supports the notion that stimulation is a critical driver of child development, demonstrating strong associations between caregivers' engagement in activities such as reading, storytelling, singing songs, venturing outside the home, playing, and naming, counting, or drawing objects and children's cognitive and socio-emotional development \citep{jeong2017pathways, jeong2016paternal}. By reading, telling stories, and engaging their children in activities such as identifying, counting, and drawing, parents equip their children with fundamental cognitive abilities and provide the groundwork for their entry into the realms of literature, school, and wider culture. Parents develop in their children a foundation of socio-emotional competences and the confidence to engage in the larger social environment through playing with them, singing songs, and taking them outside \citep{bornstein2012cognitive}.
+
+\hypertarget{motivation-of-the-study}{%
+\section{Motivation of the study}\label{motivation-of-the-study}}
+
+Socio-emotional development is now widely recognized as a strong determinant of the future course of development for an individual. Failure to reach the full potential for development early may have a lasting impact on the extent of adulthood capacity. Children who have a deficit in the area of social emotional development have a higher risk of challenging behaviors, including aggression, delinquency, and substance use \citep{domitrovich2017social}. Findings from \citep{rhoades2011examining} supports for the deployment of preventive curricula that emphasize both social and emotional development as well as attentional development as a means of enhancing young children's future academic achievement. The importance of early childhood development has been highlighted in the United Nations' Sustainable Development Goals (SDG). According to SDG target 4.2, member nations shall guarantee that all children have access to high-quality early childhood development in order to be prepared for primary education by 2030. And children's optimal socio-emotional development is vital to a country's long-term development.
+
+According to the current round of the Multiple Indicator Cluster Study (MICS), a nationally representative survey performed in 2019, about one third of children aged three to four years are not on track for sufficient socio-emotional development. MICS questionnaire for children under five contained three questions related to child socio-emotional development, which are: (i) Does child get along well with other children ?, (ii) Does child kick, bite, or hit other children or adults ?, (iii) Does child get distracted easily ?. Previous studies investigating the role of parenting activities on child socio-emotional development using the Bangladesh MICS 2019 data, have examined the effects of each caregiver' stimulation activity separately on the child's socio-emotional development \citep{alam2021early}. In contrast, this study looks at the effects of level of caregiver stimulation on socio-emotional development, where caregiver refers to parents or any other person aged 15 or over who looks after the child. In this study, level of caregiver stimulation is defined as a count index for the number of activities that caregivers (parents or someone else) engage in with the child during the 3 days preceding the survey. Thus, the index increases as the number of different types of stimulating activities performed with the child increases. To the best of our knowledge, the effect of such a variable has not been previously investigated. It is of interest to see whether it is the variation in activities performed (measured by the level of caregiver stimulation) or the type of activity performed that is more important for a child's socio-emotional development.
+
+\newpage
+
+\hypertarget{objective-of-the-study}{%
+\section{Objective of the Study}\label{objective-of-the-study}}
+
+The specific objectives of this study are,
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  To evaluate the socio-emotional development status of under-five children in Bangladesh.
+\item
+  To investigate the association between level of caregivers' stimulation and socio-emotional development.
+\item
+  To investigate the separate effects of each stimulation activity from caregivers' on the outcome (child's socio-emotional development).
+\item
+  To inform policy depending on findings of the study.
+\end{enumerate}
+
+\hypertarget{organization-of-the-report}{%
+\section{Organization of the Report}\label{organization-of-the-report}}
+
+The material presented in this report is organized into five chapters. In Chapter 1, We establish the study's concept, define the study's history and motivation, and outline the study's purpose.. In Chapter 2, we introduce the data and variables used in the analysis of the study. Chapter 3 highlights the study's methodology. The results of the analysis are provided in Chapter 4. Finally, chapter 5 summarizes the study's major findings and draws a conclusion.
+
+\newpage
+
+\hypertarget{data-and-variables}{%
+\chapter{Data and Variables}\label{data-and-variables}}
+
+\hypertarget{data-overview-and-source}{%
+\section{Data overview and Source}\label{data-overview-and-source}}
+
+The current analyses were conducted using data from most recent Bangladesh Multiple Indicator Cluster Survey (MICS) 2019, which was conducted by BBS and funded and supervised by UNICEF as part of the worldwide MICS program. The survey collects statistically valid and internationally comparable statistics that are critical for formulating evidence-based policies and programs and tracking progress toward national and global goals. This is a nationally representative sample survey done using a two-stage, stratified cluster sampling approach with the goal of collecting data on women's and children's demographics and numerous health, nutrition, and education-related variables. The primary objective of the Bangladesh MICS 2019 sample design was to generate statistically reliable estimates of the most of of indicators at the national level for urban and rural areas, eight divisions of the country (Barishal, Chattogram, Dhaka, Khulna, Mymensingh, Rajshahi, Rangpur, and Sylhet), and 64 districts.
+
+The sample strata consisted of 64 districts of the country, with enumeration areas (EAs) serving as the primary sampling units and households serving as the secondary sampling units. The sampling frame was constructed using an updated version of Bangladesh's 2011 Census of Population and Housing. In the first stage of sampling, a total of 3,220 EAs were selected from the strata using the probability proportional to size (PPS) approach. In the second stage, a random systematic selection technique was used to choose a sample of 20 houses from each sampled EA. This resulted in a final sample of 64,400 households, roughly 1,000 from each stratum. As the sample is not self-weighting, sample weights are required for analysis \citep{mics}.
+
+The current analysis is performed by extracting relevant information from survey datasets on children under the age of five. The survey collected data with the use of five questionnaires. Among these, data on a child's socio-emotional development were gathered using a ``Questionnaire for children under the age of five''. The questionnaire for under-5 children was presented to mothers (or caregivers) of all children under the age of five living in each selected household. Mothers (or caregivers) were asked all important questions regarding their children. The working dataset on children under the age of five is then created by merging separate datasets on children and household characteristics. Among these children, data on Early childhood development were obtained on 9445 children aged 3--4 years who formed the study's sample.
+
+\hypertarget{dependent-variable}{%
+\section{Dependent Variable}\label{dependent-variable}}
+
+The outcome variable of interest is whether or not a child is developing normally in terms of socio-emotional development. The MICS 2019 survey in Bangladesh employed 10-item module for collecting data on four domains ( physical, literacy-numeracy, learning, and socio-emotional) of early childhood development. Three questions (items) with binary response (yes and no) were used to determine whether a child is developmentally on track in the socio-emotional domain. These are: 1. Does child get along well with other children, 2. Does child kick, bite, or hit other children or adults, 3. Does child get distracted easily. Now according to MICS 2019 report, Children are considered to be developmentally on track if any two of the following are true: the child gets along well with other children, the child does not kick, bite, or hit other children and the child does not get distracted easily. However, it does not seem reasonable to consider an aggressive child as socio-emotionally on track when he/she is not distracted and gets along well with others. Similarly an unfriendly child cannot be considered as socio-emotionally on track even if he/she is not aggressive and not distracted. In our opinion, a child is lacking in socio-emotional development if he/she exhibits at least one of the following traits: (a) does not get along well with other children, (b) kicks, bites or hits other children or adults, (c) gets distracted easily. Thus, we create a binary response variable that takes the value 1 if the child showed one or more of the above characteristics and 0 otherwise.
+
+\hypertarget{independent-variables}{%
+\section{Independent Variables}\label{independent-variables}}
+
+\hypertarget{caregivers-stimulation}{%
+\subsection{Caregivers' Stimulation}\label{caregivers-stimulation}}
+
+In MICS survey primary caregivers were asked to report on whether mothers, fathers and/or other household member age 15 or over engaged in any of the following six activities with their children in the past 3 days:
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\tightlist
+\item
+  reading books or looking at pictures
+\item
+  telling stories;
+\item
+  singing songs
+\item
+  taking the child outside
+\item
+  playing with the child
+\item
+  naming, counting, or drawing with the child
+\end{enumerate}
+
+These items reflect a measure of caregivers' engagement in stimulation to support early childhood development \citep{bornstein2012cognitive}. Six variables with binary responses were constructed based on caregiver's six stimulation activities. If any of the caregivers (father, mother, or other household member aged 15 or older) engaged in the relevant activity, the response to corresponding variable is ``yes'' (coded as 1); otherwise, the response is ``no'' (coded as 0). Then, a summary score was calculated by summing the above six binary variables, which varied from 0 (no caregivers' engagement in any of six stimulation activities) to 6 (caregivers' engagement in all six stimulation activities within the last three days), similarly to how it has been defined and utilized in previous studies as a measure of caregivers' stimulation \citep{bornstein2012cognitive, sun2016factors}. Then a categorical variable ``Stimulation level'' was created by categorizing total number of stimulation activities into 3 groups: ``low'' (0-1 stimulation activity), ``Moderate'' (2-3 stimulation activities) and ``High'' (4-6 stimulation activities).
+
+\hypertarget{potential-confounders}{%
+\subsection{Potential Confounders}\label{potential-confounders}}
+
+The following covariates were included to reduce the risk of confounding: sex of child, area of residence (urban or rural), administrative division, household wealth index quintile, father's level of education, mother's level of education, child's disability status, mother's disability status, supervision of child, early childhood education (ECE) programme attendance, child disciplinary actions.
+
+The wealth index variable in the MICS data set was constructed using the first principal component of a group of context-specific assets owned by the household and separated into quintiles: poorest, poor, middle, rich, richest. Caregivers' (father and mother) level of education was categorized into 4 groups: pre-primary or none, primary, secondary, higher secondary or above. Both child's disability status and mother's disability status are binary variable (with levels: Has functional difficulty, Has no functional difficulty). ECE attendance is also a binary variable which asks whether a child ever attended any early childhood education programme (such as PRE-SCHOOL/ECD CENTER /NURSERY/KG SCHOOL) with response ``yes'' or ``no''. The binary variable `supervision of child' is constructed from the survey where If a child was left alone at home or in the care of another child under the age of ten for more than an hour in the preceding week, that child was deemed to be under inadequate supervision; otherwise child was considered to be under adequate supervision.
+
+The categorical variable `Child disciplinary action' was constructed based on a set of questions asked to mothers or caretakers of children under the age of five years in the MICS 2019 survey. These were the inquiries: whether any of the adult members of the family used any of the following methods to discipline the child during the past month. (1) Took away privileges, forbade something the child liked or did not allow him/her to leave the house; (2) Explained why his (child's) behaviour was wrong; (3) Gave the child something else to do; (4) Shouted, yelled at or screamed at the child; (5) Called the child dumb, lazy or another name like that; (6) Shook the child; (7) Spanked, hit or slapped the child on the bottom with bare hand; (8) Hit the child on the bottom or elsewhere on the body with something like a belt, hairbrush, stick or other hard object; (9) Hit or slapped the child on the face, head or ears; (10) Hit or slapped the child on the hand, arm, or leg; (11) Beat the child up, that is hit him/her over and over as hard as one could.
+
+Responses to each of these questions were binary (yes or no). Child disciplinary action was categorized as 4 groups: ``Non-violent'' if methods 1-3 had been used; ``Psycological Aggression'' if methods 4-5 had been used; ``Physical Aggression'' if methods 6-11 had been used to discipline the child; ``None'' if none of these methods were used.
+
+\newpage
+
+\hypertarget{methodology}{%
+\chapter{Methodology}\label{methodology}}
+
+The statistical analysis was split into two parts. Bivariate analysis and multiple logistic regression are used in a consecutive order. First, bivariate analyses with chi-square tests of associations were used to investigate the primary associations between the explanatory variable of interests and other covariates in the study and the outcome variable. A generalized linear model (GLM) was employed in the second stage to determine the impact of the study's variables of interest. Here the binary outcome variable was fitted to the study variables using a binary logistic regression model that was adjusted for the survey weights in order to generalize the findings for the whole population.
+
+\hypertarget{bivariate-analysis}{%
+\section{Bivariate analysis}\label{bivariate-analysis}}
+
+We can use bivariate analysis to examine the associations between two categorical variables by tabulating them in a two-way table structure called a contingency table. And the association is tested using chi-square test of independence.
+
+\hypertarget{chi-square-test-of-independence}{%
+\subsection{Chi-square test of independence}\label{chi-square-test-of-independence}}
+
+The Chi-square test statistic is used for testing whether the two categorical variables are independent or not; that is, whether there is a significant association between two categorical variables. An observed set of frequencies are compared with a corresponding set of expected frequencies under the null hypothesis. The hypotheses of the chi-square test is :
+\begin{align*}
+H_o&: \text{There is no association between two variables} \\
+H_1&: \text{There is an association between two variables}
+\end{align*}
+
+Under the null hypothesis (\(H_o\)), cell probabilities equal certain fixed values \(\{\pi_{ij}\}\) for \((i = 1, \dots, r \; and \; j = 1, \dots, k)\), where \(r\) is the number of rows and \(c\) denotes the number of columns in the contingency table.
+For a sample of size n with cell counts \(O_{ij}\), the values \(\{E_{ij} = n\pi_{ij}\}\), are expected frequencies. They represent the values of the expectations \(\{\mathrm{E}(O_{ij})\}\) when \(H_o\) is true, that is, when the two categorical variable in question are independent. If the \(H_o\) is true, \(O_{ij}\) should be close to \(E_{ij}\) in each cell of the contingency table. The larger the differences \(\{O_{ij} - E_{ij}\}\), the stronger the evidence against \(H_o\). The test statistic used to make such comparisons has chi-square (\(\chi^2\)) distribution under \(H_o\). The Chi-square test statistic for testing \(H_o\) is defined as,
+
+\[
+\chi^{2} = \sum_{i=1}^{r}\sum_{j=1}^{k}\frac{\left(O_{ij} - E_{ij}\right)^{2}}{E_{ij}} \; .
+\]
+
+For a fixed sample size n, greater differences \(\{O_{ij} - E_{ij}\}\) produce larger \(\chi^2\) values and stronger evidence against \(H_o\). The p-value is the probability of observing more extreme value of test statistic under the null hypothesis. The test statistic follows chi-square distribution with \((r-1)(k-1)\) under null hypothesis. Therefore, the p-value is the chi-square right-tail probability above the
+observed \(\chi^2\) test-statistic value. Before performing the test, a level of significance (that is, probability of incorrect rejection of null hypothesis) is chosen. If the p-value is smaller than the level of significance, the null hypothesis \(H_o\) is rejected in favor of alternative hypothesis \(H_1\) and we conclude that there is a significant association between the two categorical variable.
+
+\hypertarget{logistic-regression-model}{%
+\section{Logistic regression model}\label{logistic-regression-model}}
+
+Generally, bivariate analysis can only provide a preliminary indication of the independent variables' relative relevance. Since the empirical associations between the outcome and exposure variable may be confounded by other variables, to assess the association adjusting for other variables, some multivariable techniques are required to be employed.
+
+The outcome variable of interest of this study is a binary variable and the logistic regression is the most popular method for fitting binary data. Here we have used the logistic regression model for multivariable analysis to determine the adjusted association between socio-emotional development of child and caregivers' stimulation activities.
+
+Logistic regression is a statistical method for analyzing a data set in which there
+are one or more independent variables that determine an outcome. The outcome is
+measured with a dichotomous variable (in which there are only two possible outcomes),
+that is, the dependent variable is binary, and so it only contains data coded as 1 or 0.
+
+The goal of logistic regression is to find the best fitting model to describe the relationship between the dichotomous outcome variable and a set of independent (predictor or explanatory) variables. Logistic regression generates the coefficients (and its standard errors and significance levels) of a regression formula to
+predict a logit transformation of the probability of presence of the characteristic of interest, in our case which is, the probability of a child to be on track of socio-emotional development.
+
+Let \(\{y_i, x_{1i}, x_{2i}, \, \dots \, , x_{pi}\}\) be a set of observations. Where \(x_{ji}\), is the observation of the \(ith\) subject \((i = 1, 2, \, \dots \, , n)\) of the \(jth\) predictors \((j = 1, 2, \, \dots \, , p)\). In the logistic model, the independent variable can either be categorical or continuous. Assuming that, \(y_i\) is the binary outcome for \(ith\) subject and \(y_i \sim Bernoulli(\pi_i)\) . Therefore,
+
+\begin{align*}
+\pi_i(x_i) = \mathrm{P}(y_i = 1 \: | \: x_i) \quad and \quad  1 - \pi_i(x_i) = \mathrm{P}(y_i = 1 \: | \: x_i) \; .
+\end{align*}
+
+Now the logistic regression equation for regressing binary outcome on single predictor variable is,
+
+\begin{equation*}
+\mathrm{E}(Y \, | \, X = x) = \pi(x),
+\end{equation*}
+
+which gives the conditional mean \(\pi\) of the dependent variable \(Y\), given the explanatory variable \(X\). We define the logistic regression model \(\pi(x)\) as:
+
+\begin{equation*}
+\pi(x) \: = \: \mathrm{P}(Y = 1 \,| \, x) \: = \: \frac{\exp(\beta_0 + \beta_1x)}{1 + \exp(\beta_0 + \beta_1x)},
+\end{equation*}
+
+where \(\beta_o\) and \(\beta_1\) are the model parameters. The logistic function \(\pi(X)\) ranges from 0 to 1. Transformation of \(\pi(x)\) that is central to the study of logistic regression is the logit transformation. The logit transformation is
+defined as,
+
+\begin{equation}
+\mathrm{g}(x) \; = \; \log\frac{\pi(x)}{1 - \pi(x)} \; = \; \beta_o + \beta_1x \; .
+\label{eq:logit}
+\end{equation}
+
+This logit function (\eqref{eq:logit}) is linear in parameters (\(\beta's\)), continuous and ranges from \(- \, \infty\) to \(+\, \infty\). The quantity \(\pi(x)\,/\,1 - \pi(x)\) is called the odds of success and hence the logit \eqref{eq:logit} is called the log
+odds. Ratio of two odds when \(Y = 1\) and the other when \(Y = 0\) is known as odds ratio which is the base for interpretation of the coefficients of the logistic regression model. The odds ratio is probability that \(Y\) will be a member of that class relative to the other class. Hence, after estimating the parameters the effect of the independent variables on outcome variable can be measured through this odds ratio.
+
+Now multiple logistic regression analysis applies when there is a single
+dichotomous outcome variable and more than one independent variable. Then the multiple logistic regression model for \(\{y_i, x_{1i}, x_{2i}, \, \dots \, , x_{pi}\}\) can be written in the following form:
+
+\begin{align*}
+\pi_i(x_i) \: = \: \frac{\exp(\beta_{0} + \beta_1x_{1i} + \beta_2x_{2i} + \dots + \beta_px_{pi} )}{1 + \exp(\beta_{0} + \beta_1x_{1i} + \beta_2x_{2i} + \dots + \beta_px_{pi} )},
+\end{align*}
+
+where \(p\) is total number of independent variables included in the model.
+
+\hypertarget{parameter-estimation}{%
+\subsection{Parameter Estimation}\label{parameter-estimation}}
+
+A convenient way to express the contribution to the likelihood function of the pair
+\((X_i, Y_i)\) is through the term:
+
+\begin{equation*}
+L_i \; = \; \pi_i^{y_i} \: (1-\pi_i)^{1-y_i} \; .
+\end{equation*}
+
+Since the observations are independent, the likelihood function is obtained as the
+product of the terms \(L_i \,; i = 1, 2, \, \dots, \, n\) as follows:
+
+\begin{equation*}
+L(\beta) \; = \; \prod_{i=1}^{n} \pi_i^{y_i} \: (1-\pi_i)^{1-y_i} \; .
+\end{equation*}
+
+Here \(\beta\) is a vector of p unknown coefficients \(\beta^\prime = [\beta_0, \beta_1, \, \dots \, ,\beta_p]\) .
+
+The log-likelihood function becomes,
+
+\begin{equation}
+l(\beta) \; = \; \left(\prod_{i=1}^{n} \pi_i^{y_i} \: (1-\pi_i)^{1-y_i}\right) \; .
+\label{eq:llk}
+\end{equation}
+
+The MLE of this likelihood (\eqref{eq:llk}) will explain the dependent variable the most. Iterative procedure is required to obtain MLEs.
+
+\hypertarget{newton-raphson-method}{%
+\subsection{Newton-Raphson Method}\label{newton-raphson-method}}
+
+The Newton-Raphson Method is most commonly used numerical iterative method for solving nonlinear likelihood equations. The steps to carry out this method in order to estimate the parameters are discussed below:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  First obtain an initial estimate \(\beta^{(0)}\) of \(\beta\).
+\item
+  Calculate the score function \(U(\beta^{(0)})\) and Fisher information \(I(\beta^{(0)})\)
+\item
+  Calculate the next approximation \(\beta^{(1)}\) of \(\beta\) according to step 1 to obtain the maximum likelihood estimate (MLE).
+\item
+  Repeat step 2 and 3 substituting \(\beta^{(0)}\) with \(\beta^{(1)}\).
+\item
+  Continue the aforementioned steps until the convergence is achieved to a
+  satisfactory level of precision.
+\end{enumerate}
+
+We terminate the iterative procedure when \(\beta^{(m-1)}\) and \(\beta^{(m)}\) are reasonably close with \(U(\beta^{(m)})\) being approximately 0. The Newton-Raphson method also provides of the information matrix and therefore provides the variance-covariance matrix of the estimate \(\tilde{\beta}\).
+
+\hypertarget{odds-ratio-or}{%
+\subsection{Odds Ratio (OR)}\label{odds-ratio-or}}
+
+Now for the logistic regression coefficient \(\beta\) (slope), the \(\widehat{OR_j} = exp(\beta_j)\) would be the odds ratio of \(x_j\) predictor, where \(j = 1, 2, \, \dots \, , p\).
+
+If we are looking to estimate the effects of a continuous variable \(x_j\) on the dependent variable, then \(exp(\beta_j)\) is the expected change of effect of \(x_j\) on the odds of the response variable after increasing one unit of \(x_j\) adjusted by holding other variable levels constant.
+
+If we are looking to estimate the effect \(\beta_j\) of a categorical variable's level/category on outcome, \(exp(\beta_j)\) is the odds ratio of the that category and reference category of that variable; That is, \(\beta_j\) is the expected difference in log odds of outcome between a the specific level and reference level of that variable. In other words, the specific category of variable has \(e^{\beta}\) times odds of having the outcome compared to the reference category of the variable.
+
+As the odds ratio is the only measure of association that can be calculated for all
+types of study design(cross-sectional, case-control, follow-up), that's why, logistic
+regression is very useful in analysis regardless of the study design.
+
+\hypertarget{statistical-inference}{%
+\subsection{Statistical inference}\label{statistical-inference}}
+
+As \(log(OR)\) is symmetric, it's two-sided \(100(1 − \alpha/2)\) confidence interval can be obtained using,
+
+\[
+\log(\widehat{OR}) \; \pm z_\alpha \sqrt{Var(\log(\widehat{OR}))}
+\]
+
+Then the two-sided \(100(1 − \alpha/2)\) confidence interval for odds ratio can be obtained as,
+
+\[
+\exp\left(\log(\widehat{OR}) \; \pm z_\alpha \sqrt{Var(\log(\widehat{OR}))}\right)
+\]
+
+where \(z_\alpha\) is the \((1 − \alpha/2)\)th percentile of the standard Normal distribution and \(\alpha\) is the predetermined level of significance. For example, for a 95\% confidence interval, \(z_\alpha\) = 1.96.
+
+The hypotheses for the logistic regression are:
+
+\[
+H_0 : OR_j = 1 \quad \text{and} \quad H_1 : OR_j \ne 1 \:,  \quad \text{where} \; j = 1, 2, \dots, p \: .  
+\]
+
+The hypotheses can be tested using either \(z\) test or confidence interval of the
+estimates. If the confidence interval of \(\widehat{OR_j}\) contains 1, then we can not reject the null hypothesis \(H_0\), and will get to the conclusion that the \(jth\) predictor is not significant. On the other hand, if the confidence interval does not contain 1, we can reject the null hypothesis \(H_0\) and can say that \(jth\) predictor is significant for \(100(1 − \alpha/2)\)\% confidence interval. In the \(z\) test's p-value of the estimate of j\(th\) OR is less than \(\alpha\), we can reject the null hypothesis and reach the conclusion that the variable is significant. Otherwise, we cannot reject the null hypothesis.
+
+\newpage
+
+\hypertarget{analysis-and-results}{%
+\chapter{Analysis and Results}\label{analysis-and-results}}
+
+This chapter describes the analysis to be performed and the results of the analysis.Bivariate analysis was conducted initially to identify the percentage distributions of child's socio-emotional development by different characteristics and study variable and to analyze the association between the child's socio-emotional development and stimulation activities, as well as other socio-demographic and individual level variables. After getting insight of the association of stimulation activities with 3-4 years old child's socio-emotional development, a multivariable logistic model has been fitted controlling for potential confounders.
+
+\hypertarget{bivariate-analysis-1}{%
+\section{Bivariate Analysis}\label{bivariate-analysis-1}}
+
+\textbf{Table (\ref{tab:bivar})} presents the weighted percentage of children on track of socio-emotional development by different characteristics and study variable considered in the study. Overall, 30.3\% of children were found to be on track with respect to socio-emotional development. A higher proportion of female children were found to be socio-emotionally developed (33.2\%), in comparison to male children (27.6\%). Higher prevalence of socio-emotional development was found among children living in urban areas (33.5\%) than children living in rural areas. Percentage of socio-emotional development was the highest in children living in Rangpur division (42.5\%) while it was the lowest in children from Sylhet division (11.1\%).
+
+\fontsize{11}{14}\selectfont
+\begin{longtable}{lccc}
+\caption{Percent distribution of socio-emotionally developed children by background characteristics and p-value for Chi-square test of association.\label{tab:bivar}}\\
+\toprule
+\textbf{Variable} & \begin{tabular}[c]{@{}c@{}}\textbf{~ \% }\\\textbf{(Socio-emotionally }\\\textbf{developed)~~}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{~ ~Number of children}\\\textbf{in the study~~}\end{tabular} & \textbf{p-value} 
+\endfirsthead 
+\multicolumn{4}{c}%
+{{\bfseries Table \thetable\ continued from previous page}} \\
+\toprule
+\endhead
+%
+\toprule
+\endfoot
+%
+\endlastfoot
+\toprule
+\textbf{Child's Sex} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Male & 27.6 & 4889 & \multirow{2}{*}{$<0.001$} \\*
+Female & 33.2 & 4556 &  \\
+\textbf{Area of residence} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Urban & 33.5 & 1973 & \multirow{2}{*}{$0.002$} \\*
+Rural & 29.4 & 7472 &  \\
+\textbf{Division} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Barishal & 20.8 & 536 & \multirow{8}{*}{$<0.001$} \\*
+Chattogram & 26.4 & 2071 &  \\*
+Dhaka & 40.6 & 2175 &  \\*
+Khulna & 32.5 & 982 &  \\*
+Mymensingh & 35.4 & 721 &  \\*
+Rajshahi & 19.1 & 1182 &  \\*
+Rangpur & 42.5 & 1022 &  \\*
+Sylhet & 11.1 & 756 &  \\
+\textbf{Ever attended any ECE program} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Yes & 34.6 & 1829 & \multirow{2}{*}{$<0.001 $} \\*
+No & 29.3 & 7616 &  \\
+\textbf{Mother's Education} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Pre-primary or None & 28.9 & 1244 & \multirow{4}{*}{$0.03$} \\*
+Primary & 28.7 & 2304 &  \\*
+Secondary & 30.4 & 4537 &  \\*
+Higher Secondary & 33.7 & 1360 &  \\
+\textbf{Father's Education} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Pre-primary or None & 30.6 & 1854 & \multirow{4}{*}{$0.005$} \\*
+Primary & 29.2 & 2497 &  \\*
+Secondary & 29.1 & 2433 &  \\*
+Higher Secondary & 35.1 & 1301 &  \\
+\textbf{Mother's functional difficulties} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Yes & 14.1 & 159 & \multirow{2}{*}{$<0.001$} \\*
+No & 30.6 & 9092 &  \\
+\textbf{Child's functional difficulties} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Yes & 12.2 & 254 & \multirow{2}{*}{$<0.001$} \\*
+No & 30.8 & 9190 &  \\
+\textbf{Wealth index quintile} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Poorest & 29.4 & 622 & \multirow{5}{*}{$0.06$} \\*
+Poor & 28.2 & 531 &  \\*
+Middle & 30.2 & 533 &  \\*
+Rich & 30.6 & 559 &  \\*
+Richest & 33.1 & 615 &  \\
+\multicolumn{4}{l}{\textbf{Child disciplinary action}} \\*
+None & 52.1 & 141 & \multirow{4}{*}{$<0.001$} \\*
+Non-Violent & 50.4 & 170 &  \\*
+Psychological & 37.2 & 439 &  \\*
+Physical & 27.6 & 2110 &  \\
+\textbf{Supervision of child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Inadequate & 27.8 & 1366 & \multirow{2}{*}{$0.06$} \\*
+Adequate & 30.7 & 8076 &  \\
+\textbf{Stimulation level} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Low & 32.4 & 1572 & \multirow{3}{*}{$0.04$} \\*
+Moderate & 28.1 & 1788 &  \\*
+High & 30.4 & 6085 &  \\
+\textbf{Read books or looked at pictures} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 28.5 & 2825 & \multirow{2}{*}{$0.02$} \\*
+yes & 31.1 & 6619 &  \\
+\textbf{Told stories to child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 28.9 & 2852 & \multirow{2}{*}{$0.07$} \\*
+Yes & 30.9 & 6592 &  \\
+\textbf{Sang Songs with child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 29.1 & 3771 & \multirow{2}{*}{$0.08$} \\*
+Yes & 31.0 & 5673 &  \\
+\textbf{Took child outside} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 33.4 & 2550 & \multirow{2}{*}{$<0.001$} \\*
+Yes & 29.1 & 6894 &  \\
+\textbf{Played with child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 31.2 & 3611 & \multirow{2}{*}{$0.183$} \\*
+Yes & 29.7 & 5833 &  \\
+\textbf{Named/counted with child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 30.1 & 3516 & \multirow{2}{*}{$0.7952$} \\*
+Yes & 30.4 & 5929 &  \\
+\bottomrule
+\end{longtable}
+
+\normalsize
+
+\vspace{10mm}
+
+Children who had participated in an ECE (Early Childhood Education) program showed a higher percentage (34.6\%) of socio-emotional development than those who had not participated in such a program (29.3\%). Children whose mothers had no or pre-primary education or had just a primary level of education had a lower prevalence of socio-emotional development (28.9\% and 28.7\%) than children whose mothers had a secondary or higher secondary level of education (30.4\% and 33.7\%). The proportion of children who were on track of socio-emotional development and whose fathers had primary or secondary level of education were quite similar (0.292 and 0.291). But children whose fathers had either no/pre-primary education or had higher secondary level of education had higher percentage of socio-emotional development (30.6\% and 35.1\%). Among all the wealth index quintile groups, children living in the richest of households had highest percentage (33\%) of being track on socio-emotional development. Percentage of socio-emotional development was only 14.1\% among children, whose mothers had functional difficulties. Similarly, children with functional difficulties, had lower prevalence of socio-emotional development (12.1\%), compared to children without any functional difficulties. Children who did not receive disciplinary punishment had highest percentage (52.1\%) of being on track of socio-emotional development, while children who faced physical aggression had the lowest percentage (27.6\%). Among Children who received inadequate care, only 27.8\% of them were on track of socio-emotional development, whereas this percentage is 30.7\% for children who received adequate care.
+
+exposed to little variation in the types of stimulation activities performed with caregivers had the highest percentage (32.4\%) of being on track with respect to socio-emotional development, while children participating in moderate number of stimulation activities had lowest prevalence of socio-emotional development. Also among six stimulation activities with caregivers, reading books or looking at pictures, telling stories and singing songs were associated with higher percentage of socio-emotional development of children, whereas activities like taking outside and playing were associated with lower percentage of children being on track of socio-emotional development.
+
+Table (\ref{tab:bivar}) also shows that, child's sex, area of residence, administrative division of Bangladesh, ECE attendance, father's education, mother's functional difficulties, child's functional difficulties, child disciplinary action, taking child outside activity were significantly associated with early childhood development in socio-emotional domain.
+
+\clearpage
+
+\hypertarget{multivariable-analysis}{%
+\section{Multivariable Analysis}\label{multivariable-analysis}}
+
+\textbf{Table (\ref{logit01})} presents the adjusted odds ratio (OR) and 95\% confidence interval (CI) of the odds ratio of socio-emotional development of 3-4 years old Bangladeshi children. Here the research interest was to determine the association between caregivers' stimulation level, measured by the number of different types of activities the caregiver engaged in with the child in the 3 days preceding the survey and child's socio-emotional development while controlling for other background characteristics.
+
+Table (\ref{logit01}) shows that, the number of stimulation activities from caregivers was negatively associated with early childhood development in socio-emotional domain after adjusting for other variables considered in the study. That is, the odds of being on track of socio-emotional development was 24\% lower for children who had participated in moderate number (2-3 types) of stimulation activities with mother, father or other caregivers than those who had experienced none or just only one type of stimulation activity (OR 0.76; 95\% CI: 0.64, 0.92). Also, the odds of socio-emotional development was 21\% lower for children who had engaged in a high number of stimulation activities (4-6 types) with the caregivers than for those who had engaged in none or just one type of stimulation activities (OR 0.79; 95\% CI: 0.67, 0.92).
+
+For further analysis, \textbf{Table (\ref{logit02})} presents the adjusted odds ratio (OR) and 95\% confidence interval (CI) of the odds ratio of socio-emotional development of 3-4 years old Bangladeshi children for different types of caregivers' stimulation activities when taken separately in the logistic model. Table (\ref{logit02}) shows that, the activities, reading book or looking at picture, telling stories to child and named or counted with child were not significantly associated with child's socio-emotional development. But singing songs with child, taking child outside and playing with child were significantly associated with child's development in socio-emotional domain. Singing songs with child was positively associated with the outcome. The odds of being on track with respect to socio-emotional development for child who engaged in singing songs with father, mother or other caregivers was 1.27 times the odds for child who did not engaged in this activity.
+
+\newpage
+
+\fontsize{12}{15}\selectfont
+\begin{longtable}{lcc}
+\caption{Results of multivariable logistic regression analysis with socio-emotional development as outcome and level of caregiver stimulation as main exposure of interest.\label{logit01}}\\ 
+\toprule
+\textbf{Variables} & \textbf{Odds Ratio (95\% CI)~~} & \textbf{p-value} 
+\endfirsthead 
+\multicolumn{3}{c}%
+{{\bfseries Table \thetable\ continued from previous page}} \\
+\toprule
+\endhead
+%
+\toprule
+\endfoot
+%
+\endlastfoot 
+\toprule
+\textbf{Stimulation level (ref: low)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Moderate & 0.76 (0.64, 0.92) & $0.004$ \\
+High & 0.79 (0.67, 0.92) & $0.003$ \\
+\textbf{Child's Sex (ref: Male)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Female & 1.26 (1.12, 1.42) & $<0.001$ \\
+\textbf{Area of residence (ref: Urban)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Rural & 0.89 (0.75, 1.05) & $0.182$ \\
+\textbf{Division (ref: Barishal)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Chattogram & 1.47 (1.15, 1.88) & $0.002$ \\
+Dhaka & 2.71 (2.13, 3.46) & $<0.001$ \\
+Khulna & 2.03 (1.59, 2.60) & $<0.001$ \\
+Mymensingh & 2.35 (1.77, 3.12) & $<0.001$ \\
+Rajshahi & 0.97 (0.74, 1.28) & $0.844$ \\
+Rangpur & 3.07 (2.41, 3.91) & $<0.001$ \\
+Sylhet & 0.45 (0.31, 0.66) & $<0.001$ \\
+\textbf{Ever attended any ECE program (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 0.82 (0.72, 0.95) & $0.01$ \\
+\textbf{Mother Education (ref:~Pre-primary or None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Primary & 1.1 (0.88, 1.33) & $0.435$ \\
+Secondary & 1.16 (0.94, 1.44) & $0.146$ \\
+Higher Secondary & 1.1 (0.83, 1.46) & $0.486$ \\
+\textbf{Father Education (ref:~Pre-primary or None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Primary & 0.90 (0.76, 1.06) & $0.219$ \\
+Secondary & 0.79 (0.66, 0.95) & $0.012$ \\
+Higher Secondary & 0.97 (0.76, 1.24) & $0.837$ \\
+\textbf{Mother's functional difficulties (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 2.47 (1.51, 4.03) & $<0.001$ \\
+\textbf{Child's functional difficulties (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 3.72 (2.29, 6.03) & $<0.001$ \\
+\textbf{Wealth index quintile (ref: Poorest)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Poor & 0.84 (0.71, 0.98) & $0.035$ \\
+Middle & 1.01 (0.84, 1.19) & $0.920$ \\
+Rich & 0.96 (0.78, 1.17) & $0.720$ \\
+Richest & 0.97 (0.75, 1.24) & $0.795$ \\
+\textbf{Child disciplinary action (ref: None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Non-Violent & 1.10 (0.73, 1.67) & $0.647$ \\
+Psychological & 0.59 (0.42, 0.83) & $0.003$ \\
+Physical & 0.36 (0.26, 0.49) & $<0.001$ \\
+\textbf{Supervision of Child (ref: Inadequate)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Adequate & 1.10 (0.92, 1.30) & $0.266$ \\
+\bottomrule
+\end{longtable}
+
+\normalsize
+
+\vspace{14mm}
+
+Whereas the activities like taking child outside or playing with child, were negatively associated with children being on track of socio-emotional development (OR 0.76; 95\% CI: 0.66, 0.88 and OR 0.80; 95\% CI: 0.70, 0.93).
+
+Tables (\ref{logit01}) and (\ref{logit01}) also show that, among the individual level and socio-demographic characteristics, child's sex, administrative division of Bangladesh, ECE (early childhood program), father education, mother's functional difficulties, child's functional difficulties, child disciplinary action were significant variable in explaining child's socio-emotional development.
+
+\newpage
+
+\vspace{10mm}
+
+\fontsize{12}{15}\selectfont
+\begin{longtable}{lcc}
+\caption{Logistic regression model fitted to the binary outcome variable social-emotional development with the level of stimulation activities and other characteristics\label{logit02}}\\ 
+\toprule
+\textbf{Variables} & \textbf{Odds Ratio (95\% CI)~~} & \textbf{p-value} 
+\endfirsthead 
+\multicolumn{3}{c}%
+{{\bfseries Table \thetable\ continued from previous page}} \\
+\toprule
+\endhead
+%
+\toprule
+\endfoot
+%
+\endlastfoot 
+\toprule
+\textbf{Read books or looked at pictures (ref: No)~} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 1.06 (0.90, 1.25) & $0.424$ \\
+\textbf{Told stories to child (ref: No)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 0.99 (0.84, 1.18) & $0.978$ \\
+\textbf{Sang Songs with child (ref: No)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 1.27 (1.09, 1.47) & $0.001$ \\
+\textbf{Took child outside~\textbf{(ref: No)}} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 0.76 (0..66, 0.88) & $<0.001$ \\
+\textbf{Played with child~\textbf{(ref: No)}} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 0.80 (0.70, 0.93) & $0.003$ \\
+\textbf{Named/counted with child~\textbf{(ref: No)}} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 0.95 (0.82, 1.11) & $0.550$ \\
+\textbf{Child's Sex (ref: Male)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Female & 1.25 (1.11, 1.40) & $<0.001$ \\
+\textbf{Area of residence (ref: Urban)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Rural & 0.89 (0.75, 1.05) & $0.173$ \\
+\textbf{Division (ref: Barishal)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Chattogram & 1.51 (1.18, 1.94) & $0.001$ \\
+Dhaka & 2.82 (2.10, 3.60) & $<0.001$ \\
+Khulna & 2.03 (1.58, 2.60) & $<0.001$ \\
+Mymensingh & 2.30 (1.73, 3.06) & $<0.001$ \\
+Rajshahi & 0.99 (0.75, 1.31) & $0.953$ \\
+Rangpur & 3.24 (2.53, 4.13) & $<0.001$ \\
+Sylhet & 0.44 (0.30, 0.65) & $<0.001$ \\
+\textbf{Ever attended any ECE program (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 0.85 (0.73, 0.98) & $0.036$ \\
+\textbf{Mother Education (ref:~Pre-primary or None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Primary & 1.06 (0.88, 1.33) & $0.546$ \\
+Secondary & 1.11 (0.90, 1.38) & $0.315$ \\
+Higher Secondary & 1.05 (0.80, 1.41) & $0.698$ \\
+\textbf{Father Education (ref:~Pre-primary or None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Primary & 0.88 (0.75, 1.05) & $0.163$ \\
+Secondary & 0.79 (0.66, 0.94) & $0.007$ \\
+Higher Secondary & 0.94 (0.74, 1.21) & $0.682$ \\
+\textbf{Mother's functional difficulties (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 2.40 (1.47, 3.92) & $<0.001$ \\
+\textbf{Child's functional difficulties (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 3.67 (2.26, 5.95) & $<0.001$ \\
+\textbf{Wealth index quintile (ref: Poorest)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Poor & 0.82 (0.70, 0.97) & $0.020$ \\
+Middle & 0.99 (0.84, 1.18) & $0.993$ \\
+Rich & 0.96 (0.79, 1.18) & $0.714$ \\
+Richest & 0.97 (0.75, 1.25) & $0.795$ \\
+\textbf{Child disciplinary action (ref: None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Non-Violent & 1.09 (0.72, 1.67) & $0.647$ \\
+Psychological & 0.59 (0.42, 0.84) & $0.003$ \\
+Physical & 0.35 (0.25, 0.49) & $<0.001$ \\
+\textbf{Supervision of Child (ref: Inadequate)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Adequate & 1.07 (0.90, 1.28) & $0.432$ \\
+\bottomrule
+\end{longtable}
+
+\newpage
+
+\hypertarget{discussion-and-conclusion}{%
+\chapter{Discussion and Conclusion}\label{discussion-and-conclusion}}
+
+Childhood is a vital period for the formation of human and social capital and is critical in preparing societies for future prosperity, sustainability, and therefore, children's optimal socio-emotional development is a critical component of a country's sustainable development. Supporting early childhood development strengthens human capital architecture, increases economic performance, fosters community development. Parents are the first and principal individuals entrusted with child care and the primary responsibility of developing children to become competent members of their community worldwide. Children thrive when their families provide cognitive and socio-emotional care, which includes imparting information through tutoring and instilling interpersonal competency through socialization.
+
+This study focused on the association between the caregivers' stimulation activities and child's socio-emotional development in 3-4 years old children in Bangladesh. This study employed a binary logistic regression to assess the effect of caregivers' stimulation on child's development in socio-emotional domain of early childhood development (ECD). Data from the 2019 Bangladesh MICS was analyzed to obtain current status regarding the association between the exposure and the outcome while controlling for possible individual level and community level background characteristics.
+
+\hypertarget{findings-and-discussion}{%
+\section{Findings and Discussion}\label{findings-and-discussion}}
+
+In contrast to conventional perception, this study found that level of caregivers' stimulation, measured by the number of different kinds of activities performed with the child, was negatively associated with child's socio-emotional development in Bangladesh. That is, increasing the variety of stimulation activities was associated with decreasing odds of child's progress towards socio-emotional development. Further, while assessing the adjusted effect of each stimulation activity separately, similarly to previous study \citep{alam2021early} this study found that the activity of taking children outside was negatively related to child's development in socio-emotional domain. Playing with children was also found to be negatively associated with socio-emotional development. These findings run contrary to popular belief that the stimulation activities considered should have a positive effect on socio-emotional development. \citep{alam2021early} in their study offered the explanation that going out with parents or any other caregiver may not be a positive experience for children in a populous country like Bangladesh. There does not seem to be any obvious explanation for the observed negative association between level of stimulation and child's socio-emotional development. Since information regarding caregivers' stimulation acitivites with the child were confined to only 3 days preceding the survey, one cannot be sure that the same stimulation level was maintained for a long period of time before the survey. In other words, the observed socio-emotional status of the child cannot be explained entirely by the caregiver stimulation behaviour observed in the 3 days preceding the survey. We conjecture that the observed negative association may be the result of socio-emotionally impaired children being given greater stimulation to overcome their shortcomings. The study did find, however, a positive association between socio-emotional development and the activity singing song with child. In light of these findings one may conclude that the type of activity may be more important in socio-emotional development rather than the number of different types of activities performed. But since MICS data are cross sectional and observational, causality of the relationship between child's socio-emotional development and caregivers' stimulation cannot be established.
+
+\hypertarget{limitations-of-the-study}{%
+\section{Limitations of the study}\label{limitations-of-the-study}}
+
+There are several limitations of this study. First, the MICS provided only a snapshot
+of parent--child interaction during the 3 days preceding the survey and provided information about the types of activities that mothers, fathers or other caregivers engaged in, but not the actual frequency or duration and quality of caregivers' engagement. So, it is not guaranteed that the data accurately depicts the actual situation. Because parenting, child development, and parent--child relationships all develop dynamically.
+
+Second, information on maternal, paternal and other caregivers' engagement at home relied on the same primary caregivers' self-report, thus allowing for potential bias (recall bias and social desirability bias) in the data.
+
+Third, MICS uses a limited number of specific and presumably universal items to quantify caregiving. Yet, caregivers in different culture may engage in other social-specific forms of caregiving that adequately substitute for specific MICS items. The same caregiving cognition or practice can have the same or different meanings in different contexts, just as different caregiving cognitions or practices can have the same or different meanings in different contexts. Moreover, next to quantitative aspects of caregiving activities, qualitative aspects matter a great deal. Consider playing with child; two mothers could equate in their frequencies
+of play, yet one mother might solicit sequences of high-level play that challenge and advance her child's play skills, whereas another mother might demonstrate low-level play that does not advance her child's skills. In addition to considering the
+form and level of caregiving, it is critical to consider the timing and content of caregiving with respect to children's ongoing activities.
+
+Another limitation of this study is that we did not control for additional variables that may be potential confounders such as nutritional status of the child.
+
+\hypertarget{recommendations}{%
+\section{Recommendations}\label{recommendations}}
+
+Childhood is a vital period for the formation of human and social capital and is critical in preparing societies for future prosperity, sustainability, and therefore, children's optimal socio-emotional development is a critical component of a country's sustainable development. Supporting early childhood development strengthens human capital architecture, increases economic performance, fosters community development. Parents are the first and principal individuals entrusted with child care and the primary responsibility of developing children to become competent members of their community worldwide. Children thrive when their families provide cognitive and socio-emotional care, which includes imparting information through tutoring and instilling interpersonal competency through socialization. This study investigated the socio-emotional development only in children aged 3-4 years, but the socio-emotional development of children and caregivers' stimulation are matter of long time. To determine the feasibility of achieving the Sustainable Development Goals (SDGs) by 2030 and to obtain an accurate picture of socio-emotional development and the effect of caregiver stimulation on development, execution of cohort study with the specific purpose of assessing the quantity, duration, and quality of caregivers' engagement with the child and observing the child's development is required.
+
+\newpage
+
+\renewcommand\bibname{Bibliography}
+  \bibliography{../texFiles/references.bib}
+
+\end{document}

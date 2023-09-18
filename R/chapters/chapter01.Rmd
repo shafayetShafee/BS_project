@@ -1,0 +1,58 @@
+# Introduction
+
+In the first five years of life, children grow and develop substantially in all four domains of development. These areas are physical, literacy-numeracy, learning, and socio-emotional. Among them, socio-emotional development refers to a child experience, expression, and management of emotions and the ability to communicate and build relationships with others [@cohen2005early]. 
+
+Social and emotional development involves the acquisition of a set of skills. Among the most important are the abilities to: 
+
+* Recognize and comprehend one's own emotions
+* Accurately sense and interpret people' emotional states
+* In a constructive manner, manage intense emotions and their expressions.
+* Regulate one’s own behavior
+* Empathize with other people.
+* Create and maintain relationships
+
+Children's fundamental cognitive and socio-emotional characteristics are created
+during their early years. Between birth and the age of five, children develop a set of age-appropriate essential cognitive skills that enable them to maintain attention, comprehend and follow directions, communicate with others, and handle more sophisticated problems. And throughout this time period, the quality of a child's home environment and interactions with mother, father and caregivers play a significant role in their development. Early warm and responsive relationships with caregivers and peers can assist children in developing fundamental social and emotional competencies, such as the ability to get along with others and manage negative emotions and aggressive behaviors on their own [ @grantham2007developmental; @walker2011inequality]. Child's encounters with responsive caregivers serve a critical neurological function, and these interactions can aid in their cognitive, physical, social, and emotional development [@britto2017nurturing]. Adult involvement in activities with children and the environment in which children are cared for are crucial aspects in this context. 
+
+In cognitions and practices, caregiving is manifested. Additionally, caregiving is multifaceted, modular, and individualized [@bornstein2006parenting]. Beginning in infancy, children learn about the physical world through cognitive interactions, and children are motivated to connect with others through socio-emotional interactions. Many investigators have operationally distinguished cognitive and socio-emotional caregiving domains [@bornstein2006parenting]. These two broad types of caregiving are relatively independent of one another and developmentally significant because they relate to children’s communicative, mental, emotional, and social competencies [@national2000neurons; @walker2007child].
+
+Generally, cognitive caregiving consists of the variety of strategies parents
+employ in stimulating children to engage and understand the environment by describing and demonstrating and providing children with opportunities to learn [@bornstein2012cognitive]. The MICS 2019 asks about mothers’ specific cognitive
+caregiving practices in terms of reading, telling stories, and naming, counting, and drawing with their young children [@mics]. Whereas, socio-emotional caregiving includes activities that engage children in interpersonal interactions [@bornstein2012cognitive]. Through openness, listening, and emotional closeness, parents make their children feel valued, accepted, and approved of. The MICS asks specifically about parents’ socio-emotional caregiving in terms of playing with children, singing songs, and taking children with them out of doors. Adults influence the development of child play in many ways: by provisioning the play environment, modeling, engaging children actively and symbolically, responding to children’s overtures, and scaffolding more advanced play. When children play with more mature caregivers, they are furnished with models, stimulants, materials, and opportunities to perform at levels above those they may achieve on their own [@vygotsky1978mind].
+
+## Background of the Study
+
+According to @black2017early, 43% (250 million) of children under the age of five in low- and middle-income nations are at risk of not developing to their full potential. This percentage is a warning sign that all global educational targets, as well as other relevant sustainable development goals, are at risk. Non-optimal developmental status has a detrimental impact on educational attainment and production, resulting in a poverty and development cycle that spans generations [@engle2007strategies]. In low- and middle-income (LAMI) countries, insufficient opportunities for cognitive stimulation at home have been identified as a risk factor for child development, whereas increased educational and language stimulation at home, both of which are critical for cognitive and socio-emotional parenting, has been identified as a protective factor [@wachs2013nature].
+
+Parents' activities are geared toward meeting their children's biological, physical, cognitive, and socio-emotional needs. Caregiving is critical to early childhood development because it regulates the majority of child–environment interactions and contributes to the shaping of child adaption [@bornstein2006parenting]. The immediate environment (parents, siblings, and caregivers), local settings (home and school), and external systems (for example, parents' workplace) all have an effect on the child's socio-emotional development. Multiple theories of human development, for example, attachment theory [@bowlby1969attachment], the bioecological model of human development [@bronfenbrenner2007bioecological] and relational developmental
+systems theory [@overton2015processes], have long emphasized the importance of caregivers-child interactions as a critical proximal process for supporting children’s development.
+
+The home is the first and most vital environment in which children interact and spend their time, and it is at this period that developmental milestones occur. Thus, it is essential for early childhood development that parents and other caregivers provide a stimulating environment through caring care [@black2017early]. Responsive parenting activities with children such as reading, singing, and playing are associated positively with language development, cognitive performance, and social abilities [@yousafzai2014effect] and involvement of parents is positively associated with cognitive and socio-emotional development in the preschool period [@maggi2010social]. Caregiving activities are directly linked to children's cognitive and socioemotional development and play a key influence in children's later academic achievement, skill acquisition, and well-being [@behrman2013economic].
+
+Existing research from economically and culturally diverse countries supports the notion that stimulation is a critical driver of child development, demonstrating strong associations between caregivers' engagement in activities such as reading, storytelling, singing songs, venturing outside the home, playing, and naming, counting, or drawing objects and children's cognitive and socio-emotional development [@jeong2017pathways; @jeong2016paternal]. By reading, telling stories, and engaging their children in activities such as identifying, counting, and drawing, parents equip their children with fundamental cognitive abilities and provide the groundwork for their entry into the realms of literature, school, and wider culture. Parents develop in their children a foundation of socio-emotional competences and the confidence to engage in the larger social environment through playing with them, singing songs, and taking them outside [@bornstein2012cognitive].
+
+## Motivation of the study
+
+Socio-emotional development is now widely recognized as a strong determinant of the future course of development for an individual. Failure to reach the full potential for development early may have a lasting impact on the extent of adulthood capacity. Children who have a deficit in the area of social emotional development have a higher risk of challenging behaviors, including aggression, delinquency, and substance use [@domitrovich2017social]. Findings from [@rhoades2011examining] supports for the deployment of preventive curricula that emphasize both social and emotional development as well as attentional development as a means of enhancing young children's future academic achievement. The importance of early childhood development has been highlighted in the United Nations' Sustainable Development Goals (SDG). According to SDG target 4.2, member nations shall guarantee that all children have access to high-quality early childhood development in order to be prepared for primary education by 2030. And children's optimal socio-emotional development is vital to a country's long-term development.
+
+According to the current round of the Multiple Indicator Cluster Study (MICS), a nationally representative survey performed in 2019, about one third of children aged three to four years are not on track for sufficient socio-emotional development. MICS questionnaire for children under five contained three questions related to child socio-emotional development, which are: (i) Does child get along well with other children ?, (ii) Does child kick, bite, or hit other children or adults ?, (iii) Does child get distracted easily ?. Previous studies investigating the role of parenting activities on child socio-emotional development using the  Bangladesh MICS 2019 data, have examined the effects of each caregiver' stimulation activity separately on the child's socio-emotional development [@alam2021early]. In contrast, this study looks at the effects of level of caregiver stimulation on socio-emotional development, where caregiver refers to parents or any other person aged 15 or over who looks after the child. In this study, level of caregiver stimulation is defined as a count index for the number of activities that caregivers (parents or someone else) engage in with the child during the 3 days preceding the survey. Thus, the index increases as the number of different types of stimulating activities performed with the child increases. To the best of our knowledge, the effect of such a variable has not been previously investigated. It is of interest to see whether it is the variation in activities performed (measured by the level of caregiver stimulation) or the type of activity performed that is more important for  a child's socio-emotional development.
+
+\newpage
+
+## Objective of the Study
+
+The specific objectives of this study are, 
+
+1) To evaluate the socio-emotional development status of under-five children in Bangladesh.
+2) To investigate the association between level of caregivers' stimulation and socio-emotional development.
+3) To investigate the  separate effects of each stimulation activity from caregivers' on the outcome (child's socio-emotional development).
+4) To inform policy depending on findings of the study.
+
+## Organization of the Report
+
+The material presented in this report is organized into five chapters. In Chapter 1, We establish the study's concept, define the study's history and motivation, and outline the study's purpose.. In Chapter 2, we introduce the data and variables used in the analysis of the study. Chapter 3 highlights the study's methodology. The results of the analysis are provided in Chapter 4. Finally, chapter 5 summarizes the study's major findings and draws a conclusion.
+
+
+
+
+

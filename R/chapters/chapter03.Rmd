@@ -1,0 +1,181 @@
+# Methodology
+
+The statistical analysis was split into two parts. Bivariate analysis and multiple logistic regression are used in a consecutive order. First, bivariate analyses with chi-square tests of associations were used to investigate the primary associations between the explanatory variable of interests and other covariates in the study and the outcome variable. A generalized linear model (GLM) was employed in the second stage to determine the impact of the study's variables of interest. Here the binary outcome variable was fitted to the study variables using a binary logistic regression model that was adjusted for the survey weights in order to generalize the findings for the whole population.
+
+
+## Bivariate analysis
+
+We can use bivariate analysis to examine the associations between two categorical variables by tabulating them in a two-way table structure called a contingency table. And the association is tested using chi-square test of independence.
+
+### Chi-square test of independence
+
+The Chi-square test statistic is used for testing whether the two categorical variables are independent or not; that is, whether there is a significant association between two categorical variables. An observed set of frequencies are compared with a corresponding set of expected frequencies under the null hypothesis. The hypotheses of the chi-square test is :
+\begin{align*}
+H_o&: \text{There is no association between two variables} \\
+H_1&: \text{There is an association between two variables}
+\end{align*}
+
+Under the null hypothesis ($H_o$), cell probabilities equal certain fixed values $\{\pi_{ij}\}$ for $(i = 1, \dots, r \; and \; j = 1, \dots, k)$, where $r$ is the number of rows and $c$ denotes the number of columns in the contingency table.
+For a sample of size n with cell counts $O_{ij}$, the values $\{E_{ij} = n\pi_{ij}\}$, are expected frequencies. They represent the values of the expectations $\{\mathrm{E}(O_{ij})\}$ when $H_o$ is true, that is, when the two categorical variable in question are independent. If the $H_o$ is true, $O_{ij}$ should be close to $E_{ij}$ in each cell of the contingency table. The larger the differences $\{O_{ij} - E_{ij}\}$, the stronger the evidence against $H_o$. The test statistic used to make such comparisons has chi-square ($\chi^2$) distribution under $H_o$. The Chi-square test statistic for testing $H_o$ is defined as,
+
+$$
+\chi^{2} = \sum_{i=1}^{r}\sum_{j=1}^{k}\frac{\left(O_{ij} - E_{ij}\right)^{2}}{E_{ij}} \; .
+$$
+
+For a fixed sample size n, greater differences $\{O_{ij} - E_{ij}\}$ produce larger $\chi^2$ values and stronger evidence against $H_o$. The p-value is the probability of observing more extreme value of test statistic under the null hypothesis. The test statistic follows chi-square distribution with $(r-1)(k-1)$ under null hypothesis. Therefore, the p-value is the chi-square right-tail probability above the
+observed $\chi^2$ test-statistic value. Before performing the test, a level of significance (that is, probability of incorrect rejection of null hypothesis) is chosen. If the p-value is smaller than the level of significance, the null hypothesis $H_o$ is rejected in favor of alternative hypothesis $H_1$ and we conclude that there is a significant association between the two categorical variable.
+
+<!-- where $O_{ij}$ $i = 1, \dots, r\quad and \quad j = 1, \dots, k)$ denotes the observed frequencies and $E_{ij}$ $(i = 1, \dots, r\quad and \quad j = 1, \dots, k)$ denotes the expected frequencies. The p-value is the probability of observing more extreme value of test statistic under the null hypothesis. The test statistic follows $\chi^2$ distribution with $(r-1)(k-1)$ under null hypothesis, where $r$ is the number of rows and $c$ denotes the number of columns in the contingency table.  -->
+
+
+## Logistic regression model
+
+Generally, bivariate analysis can only provide a preliminary indication of the independent variables' relative relevance. Since the empirical associations between the outcome and exposure variable may be confounded by other variables, to assess the association adjusting for other variables, some multivariable techniques are required to be employed. 
+
+The outcome variable of interest of this study is a binary variable and the logistic regression is the most popular method for fitting binary data. Here we have used the logistic regression model for multivariable analysis to determine the adjusted association between socio-emotional development of child and caregivers' stimulation activities.
+
+Logistic regression is a statistical method for analyzing a data set in which there
+are one or more independent variables that determine an outcome. The outcome is
+measured with a dichotomous variable (in which there are only two possible outcomes),
+that is, the dependent variable is binary, and so it only contains data coded as 1 or 0.
+
+The goal of logistic regression is to find the best fitting model to describe the relationship between the dichotomous outcome variable and a set of independent (predictor or explanatory) variables. Logistic regression generates the coefficients (and its standard errors and significance levels) of a regression formula to
+predict a logit transformation of the probability of presence of the characteristic of interest, in our case which is, the probability of a child to be on track of socio-emotional development.
+
+Let $\{y_i, x_{1i}, x_{2i}, \, \dots \, , x_{pi}\}$ be a set of observations. Where $x_{ji}$, is the observation of the $ith$ subject $(i = 1, 2, \, \dots \, , n)$ of the $jth$ predictors $(j = 1, 2, \, \dots \, , p)$. In the logistic model, the independent variable can either be categorical or continuous. Assuming that, $y_i$ is the binary outcome for $ith$ subject and $y_i \sim Bernoulli(\pi_i)$ . Therefore, 
+
+\begin{align*}
+\pi_i(x_i) = \mathrm{P}(y_i = 1 \: | \: x_i) \quad and \quad  1 - \pi_i(x_i) = \mathrm{P}(y_i = 1 \: | \: x_i) \; .
+\end{align*}
+
+Now the logistic regression equation for regressing binary outcome on single predictor variable is,
+
+\begin{equation*}
+\mathrm{E}(Y \, | \, X = x) = \pi(x),
+\end{equation*}
+
+which gives the conditional mean $\pi$ of the dependent variable $Y$, given the explanatory variable $X$. We define the logistic regression model $\pi(x)$ as:
+
+\begin{equation*}
+\pi(x) \: = \: \mathrm{P}(Y = 1 \,| \, x) \: = \: \frac{\exp(\beta_0 + \beta_1x)}{1 + \exp(\beta_0 + \beta_1x)},
+\end{equation*}
+
+where $\beta_o$ and $\beta_1$ are the model parameters. The logistic function $\pi(X)$ ranges from 0 to 1. Transformation of $\pi(x)$ that is central to the study of logistic regression is the logit transformation. The logit transformation is
+defined as,
+
+\begin{equation}
+\mathrm{g}(x) \; = \; \log\frac{\pi(x)}{1 - \pi(x)} \; = \; \beta_o + \beta_1x \; .
+(\#eq:logit)
+\end{equation}
+
+This logit function (\@ref(eq:logit)) is linear in parameters ($\beta's$), continuous and ranges from $- \, \infty$ to $+\, \infty$. The quantity $\pi(x)\,/\,1 - \pi(x)$ is called the odds of success and hence the logit  \@ref(eq:logit) is called the log
+odds. Ratio of two odds when $Y = 1$ and the other when $Y = 0$ is known as odds ratio which is the base for interpretation of the coefficients of the logistic regression model. The odds ratio is probability that $Y$ will be a member of that class relative to the other class. Hence, after estimating the parameters the effect of the independent variables on outcome variable can be measured through this odds ratio.
+
+Now multiple logistic regression analysis applies when there is a single
+dichotomous outcome variable and more than one independent variable. Then the multiple logistic regression model for $\{y_i, x_{1i}, x_{2i}, \, \dots \, , x_{pi}\}$ can be written in the following form:
+
+\begin{align*}
+\pi_i(x_i) \: = \: \frac{\exp(\beta_{0} + \beta_1x_{1i} + \beta_2x_{2i} + \dots + \beta_px_{pi} )}{1 + \exp(\beta_{0} + \beta_1x_{1i} + \beta_2x_{2i} + \dots + \beta_px_{pi} )},
+\end{align*}
+
+where $p$ is total number of independent variables included in the model.
+
+
+### Parameter Estimation
+
+<!-- When the response variable $Y$ is coded as 1 or 0 then we can write, -->
+
+<!-- \begin{align*} -->
+<!-- \pi(X) = \mathrm{P}(Y = 1 \: | X) \; , \\ -->
+<!-- and \; 1 - \pi(X) = \mathrm{P}(Y = 0 \: | X) \; . -->
+<!-- \end{align*} -->
+
+A convenient way to express the contribution to the likelihood function of the pair
+$(X_i, Y_i)$ is through the term:
+
+\begin{equation*}
+L_i \; = \; \pi_i^{y_i} \: (1-\pi_i)^{1-y_i} \; .
+\end{equation*}
+
+Since the observations are independent, the likelihood function is obtained as the
+product of the terms $L_i \,; i = 1, 2, \, \dots, \, n$ as follows:
+
+\begin{equation*}
+L(\beta) \; = \; \prod_{i=1}^{n} \pi_i^{y_i} \: (1-\pi_i)^{1-y_i} \; .
+\end{equation*}
+
+Here $\beta$ is a vector of p unknown coefficients $\beta^\prime = [\beta_0, \beta_1, \, \dots \, ,\beta_p]$ .
+
+
+The log-likelihood function becomes,
+
+\begin{equation}
+l(\beta) \; = \; \left(\prod_{i=1}^{n} \pi_i^{y_i} \: (1-\pi_i)^{1-y_i}\right) \; .
+(\#eq:llk)
+\end{equation}
+
+The MLE of this likelihood (\@ref(eq:llk)) will explain the dependent variable the most. Iterative procedure is required to obtain MLEs.
+
+<!-- The following normal equations are then solved for the values of parameters by -->
+<!-- Newton-Raphson iterative procedure: -->
+
+<!-- \begin{align*} -->
+<!-- \frac{\delta{L(\beta)}}{\delta{\beta_o}} \; &= \; 0 \\ -->
+<!-- and \; \frac{\delta{L(\beta)}}{\delta{\beta_i}} \; &= \; 0, -->
+<!-- \end{align*} -->
+
+<!-- where $j = 1, 2, \dots, p$. -->
+
+### Newton-Raphson Method
+
+The Newton-Raphson Method is most commonly used numerical iterative method for solving nonlinear likelihood equations. The steps to carry out this method in order to estimate the parameters are discussed below:
+
+1. First obtain an initial estimate $\beta^{(0)}$ of $\beta$.
+2. Calculate the score function $U(\beta^{(0)})$ and Fisher information $I(\beta^{(0)})$
+3. Calculate the next approximation $\beta^{(1)}$ of $\beta$ according to step 1 to obtain the maximum likelihood estimate (MLE).
+4. Repeat step 2 and 3 substituting $\beta^{(0)}$ with $\beta^{(1)}$.
+5. Continue the aforementioned steps until the convergence is achieved to a
+satisfactory level of precision.
+
+We terminate the iterative procedure when $\beta^{(m-1)}$ and $\beta^{(m)}$ are reasonably close with $U(\beta^{(m)})$ being approximately 0. The Newton-Raphson method also provides of the information matrix and therefore provides the variance-covariance matrix of the estimate $\tilde{\beta}$.
+
+
+### Odds Ratio (OR)
+
+Now for the logistic regression coefficient $\beta$ (slope), the $\widehat{OR_j} = exp(\beta_j)$ would be the odds ratio of $x_j$ predictor, where $j = 1, 2, \, \dots \, , p$. 
+
+If we are looking to estimate the effects of a continuous variable $x_j$ on the dependent variable, then $exp(\beta_j)$ is the expected change of effect of $x_j$ on the odds of the response variable after increasing one unit of $x_j$ adjusted by holding other variable levels constant.
+
+If we are looking to estimate the effect $\beta_j$ of a categorical variable’s level/category on outcome, $exp(\beta_j)$ is the odds ratio of the that category and reference category of that variable; That is, $\beta_j$ is the expected difference in log odds of outcome between a the specific level and reference level of that variable. In other words, the specific category of variable has $e^{\beta}$ times odds of having the outcome compared to the reference category of the variable.
+
+As the odds ratio is the only measure of association that can be calculated for all
+types of study design(cross-sectional, case-control, follow-up), that’s why, logistic
+regression is very useful in analysis regardless of the study design.
+
+
+### Statistical inference
+
+As $log(OR)$ is symmetric, it’s two-sided $100(1 − \alpha/2)$ confidence interval can be obtained using,
+
+$$
+\log(\widehat{OR}) \; \pm z_\alpha \sqrt{Var(\log(\widehat{OR}))}
+$$
+
+Then the two-sided $100(1 − \alpha/2)$ confidence interval for odds ratio can be obtained as,
+
+$$
+\exp\left(\log(\widehat{OR}) \; \pm z_\alpha \sqrt{Var(\log(\widehat{OR}))}\right)
+$$
+
+where $z_\alpha$ is the $(1 − \alpha/2)$th percentile of the standard Normal distribution and $\alpha$ is the predetermined level of significance. For example, for a 95% confidence interval, $z_\alpha$ = 1.96.
+
+The hypotheses for the logistic regression are:
+
+$$
+H_0 : OR_j = 1 \quad \text{and} \quad H_1 : OR_j \ne 1 \:,  \quad \text{where} \; j = 1, 2, \dots, p \: .  
+$$
+
+
+The hypotheses can be tested using either $z$ test or confidence interval of the
+estimates. If the confidence interval of $\widehat{OR_j}$ contains 1, then we can not reject the null hypothesis $H_0$, and will get to the conclusion that the $jth$ predictor is not significant. On the other hand, if the confidence interval does not contain 1, we can reject the null hypothesis $H_0$ and can say that $jth$ predictor is significant for $100(1 − \alpha/2)$% confidence interval. In the $z$ test's p-value of the estimate of j$th$ OR is less than $\alpha$, we can reject the null hypothesis and reach the conclusion that the variable is significant. Otherwise, we cannot reject the null hypothesis.
+

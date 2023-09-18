@@ -1,0 +1,266 @@
+# Analysis and Results
+
+This chapter describes the analysis to be performed and the results of the analysis.Bivariate analysis was conducted initially to identify the percentage distributions of child's socio-emotional development by  different characteristics and study variable and to analyze the association between the child's socio-emotional development and stimulation activities, as well as other socio-demographic and individual level variables. After getting insight of the association of stimulation activities with 3-4 years old child's socio-emotional development, a multivariable logistic model has been fitted controlling for potential confounders.
+
+## Bivariate Analysis
+
+**Table (\@ref(tab:bivar))** presents the weighted percentage of children on track of socio-emotional development by  different characteristics and study variable considered in the study. Overall, 30.3% of children were found to be on track with respect to socio-emotional development. A higher proportion of female children were found to be socio-emotionally developed (33.2%), in comparison to male children (27.6%). Higher prevalence of socio-emotional development was found among children living in urban areas (33.5%) than children living in rural areas. Percentage of socio-emotional development was the highest in children living in Rangpur division (42.5%) while it was the lowest in children from Sylhet division (11.1%).
+
+<!-- \newpage -->
+
+\fontsize{11}{14}\selectfont
+\begin{longtable}{lccc}
+\caption{Percent distribution of socio-emotionally developed children by background characteristics and p-value for Chi-square test of association.\label{tab:bivar}}\\
+\toprule
+\textbf{Variable} & \begin{tabular}[c]{@{}c@{}}\textbf{~ \% }\\\textbf{(Socio-emotionally }\\\textbf{developed)~~}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{~ ~Number of children}\\\textbf{in the study~~}\end{tabular} & \textbf{p-value} 
+\endfirsthead 
+\multicolumn{4}{c}%
+{{\bfseries Table \thetable\ continued from previous page}} \\
+\toprule
+\endhead
+%
+\toprule
+\endfoot
+%
+\endlastfoot
+\toprule
+\textbf{Child's Sex} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Male & 27.6 & 4889 & \multirow{2}{*}{$<0.001$} \\*
+Female & 33.2 & 4556 &  \\
+\textbf{Area of residence} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Urban & 33.5 & 1973 & \multirow{2}{*}{$0.002$} \\*
+Rural & 29.4 & 7472 &  \\
+\textbf{Division} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Barishal & 20.8 & 536 & \multirow{8}{*}{$<0.001$} \\*
+Chattogram & 26.4 & 2071 &  \\*
+Dhaka & 40.6 & 2175 &  \\*
+Khulna & 32.5 & 982 &  \\*
+Mymensingh & 35.4 & 721 &  \\*
+Rajshahi & 19.1 & 1182 &  \\*
+Rangpur & 42.5 & 1022 &  \\*
+Sylhet & 11.1 & 756 &  \\
+\textbf{Ever attended any ECE program} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Yes & 34.6 & 1829 & \multirow{2}{*}{$<0.001 $} \\*
+No & 29.3 & 7616 &  \\
+\textbf{Mother's Education} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Pre-primary or None & 28.9 & 1244 & \multirow{4}{*}{$0.03$} \\*
+Primary & 28.7 & 2304 &  \\*
+Secondary & 30.4 & 4537 &  \\*
+Higher Secondary & 33.7 & 1360 &  \\
+\textbf{Father's Education} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Pre-primary or None & 30.6 & 1854 & \multirow{4}{*}{$0.005$} \\*
+Primary & 29.2 & 2497 &  \\*
+Secondary & 29.1 & 2433 &  \\*
+Higher Secondary & 35.1 & 1301 &  \\
+\textbf{Mother's functional difficulties} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Yes & 14.1 & 159 & \multirow{2}{*}{$<0.001$} \\*
+No & 30.6 & 9092 &  \\
+\textbf{Child's functional difficulties} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Yes & 12.2 & 254 & \multirow{2}{*}{$<0.001$} \\*
+No & 30.8 & 9190 &  \\
+\textbf{Wealth index quintile} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Poorest & 29.4 & 622 & \multirow{5}{*}{$0.06$} \\*
+Poor & 28.2 & 531 &  \\*
+Middle & 30.2 & 533 &  \\*
+Rich & 30.6 & 559 &  \\*
+Richest & 33.1 & 615 &  \\
+\multicolumn{4}{l}{\textbf{Child disciplinary action}} \\*
+None & 52.1 & 141 & \multirow{4}{*}{$<0.001$} \\*
+Non-Violent & 50.4 & 170 &  \\*
+Psychological & 37.2 & 439 &  \\*
+Physical & 27.6 & 2110 &  \\
+\textbf{Supervision of child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Inadequate & 27.8 & 1366 & \multirow{2}{*}{$0.06$} \\*
+Adequate & 30.7 & 8076 &  \\
+\textbf{Stimulation level} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+Low & 32.4 & 1572 & \multirow{3}{*}{$0.04$} \\*
+Moderate & 28.1 & 1788 &  \\*
+High & 30.4 & 6085 &  \\
+\textbf{Read books or looked at pictures} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 28.5 & 2825 & \multirow{2}{*}{$0.02$} \\*
+yes & 31.1 & 6619 &  \\
+\textbf{Told stories to child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 28.9 & 2852 & \multirow{2}{*}{$0.07$} \\*
+Yes & 30.9 & 6592 &  \\
+\textbf{Sang Songs with child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 29.1 & 3771 & \multirow{2}{*}{$0.08$} \\*
+Yes & 31.0 & 5673 &  \\
+\textbf{Took child outside} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 33.4 & 2550 & \multirow{2}{*}{$<0.001$} \\*
+Yes & 29.1 & 6894 &  \\
+\textbf{Played with child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 31.2 & 3611 & \multirow{2}{*}{$0.183$} \\*
+Yes & 29.7 & 5833 &  \\
+\textbf{Named/counted with child} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\*
+No & 30.1 & 3516 & \multirow{2}{*}{$0.7952$} \\*
+Yes & 30.4 & 5929 &  \\
+\bottomrule
+\end{longtable}
+
+\normalsize
+
+\vspace{10mm}
+
+Children who had participated in an ECE (Early Childhood Education) program showed a higher percentage (34.6%) of socio-emotional development than those who had not participated in such a program (29.3%). Children whose mothers had no or pre-primary education or had just a primary level of education had a lower prevalence of socio-emotional development (28.9% and 28.7%) than children whose mothers had a secondary or higher secondary level of education (30.4% and 33.7%). The proportion of children who were on track of socio-emotional development and whose fathers had primary or secondary level of education were quite similar (0.292 and 0.291). But children whose fathers had either no/pre-primary education or had higher secondary level of education had higher percentage of socio-emotional development (30.6% and 35.1%). Among all the wealth index quintile groups, children living in the richest of households had highest percentage (33%) of being track on socio-emotional development. Percentage of socio-emotional development was only 14.1% among children, whose mothers had functional difficulties. Similarly, children with functional difficulties, had lower prevalence of socio-emotional development (12.1%), compared to children without any functional difficulties. Children who did not receive disciplinary punishment had highest percentage (52.1%) of being on track of socio-emotional development, while children who faced physical aggression had the lowest percentage (27.6%). Among Children who received inadequate care, only 27.8% of them were on track of socio-emotional development, whereas this percentage is 30.7% for children who received adequate care.
+
+exposed to little variation in the types of stimulation activities performed with caregivers had the highest percentage (32.4%) of being on track with respect to socio-emotional development, while children participating in moderate number of stimulation activities had lowest prevalence of socio-emotional development. Also among six stimulation activities with caregivers, reading books or looking at pictures, telling stories and singing songs were associated with higher percentage of socio-emotional development of children, whereas activities like taking outside and playing were associated with lower percentage of children being on track of socio-emotional development.
+
+Table (\@ref(tab:bivar)) also shows that, child's sex, area of residence, administrative division of Bangladesh, ECE attendance, father's education, mother's functional difficulties, child's functional difficulties, child disciplinary action, taking child outside activity were significantly associated with early childhood development in socio-emotional domain.
+
+\clearpage
+
+## Multivariable Analysis
+
+**Table (\@ref(logit01))** presents the adjusted odds ratio (OR) and 95% confidence interval (CI) of the odds ratio of socio-emotional development of 3-4 years old Bangladeshi children. Here the research interest was to determine the association between caregivers' stimulation level, measured by the number of different types of activities the caregiver engaged in with the child in the 3 days preceding the survey and child's socio-emotional development while controlling for other background characteristics.
+
+Table (\@ref(logit01)) shows that, the number of stimulation activities from caregivers was negatively associated with early childhood development in socio-emotional domain after adjusting for other variables considered in the study. That is, the odds of being on track of socio-emotional development was 24% lower for children who had participated in moderate number (2-3 types) of stimulation activities with mother, father or other caregivers than those who had experienced none or just only one type of stimulation activity (OR 0.76; 95% CI: 0.64, 0.92). Also, the odds of socio-emotional development was 21% lower for children who had engaged in a high number of stimulation activities (4-6 types) with the caregivers than for those who had engaged in none or just one type of stimulation activities (OR 0.79; 95% CI: 0.67, 0.92).
+
+For further analysis, **Table (\@ref(logit02))** presents the adjusted odds ratio (OR) and 95% confidence interval (CI) of the odds ratio of socio-emotional development of 3-4 years old Bangladeshi children for different types of caregivers' stimulation activities when taken separately in the logistic model. Table (\@ref(logit02)) shows that, the activities, reading book or looking at picture, telling stories to child and named or counted with child were not significantly associated with child's socio-emotional development. But singing songs with child, taking child outside and playing with child were significantly associated with child's development in socio-emotional domain. Singing songs with child was positively associated with the outcome. The odds of being on track with respect to socio-emotional development for child who engaged in singing songs with father, mother or other caregivers  was 1.27 times the odds for child who did not engaged in this activity.
+
+
+<!-- ---------------------The first logistic table------------ -->
+\newpage
+
+\fontsize{12}{15}\selectfont
+\begin{longtable}{lcc}
+\caption{Results of multivariable logistic regression analysis with socio-emotional development as outcome and level of caregiver stimulation as main exposure of interest.\label{logit01}}\\ 
+\toprule
+\textbf{Variables} & \textbf{Odds Ratio (95\% CI)~~} & \textbf{p-value} 
+\endfirsthead 
+\multicolumn{3}{c}%
+{{\bfseries Table \thetable\ continued from previous page}} \\
+\toprule
+\endhead
+%
+\toprule
+\endfoot
+%
+\endlastfoot 
+\toprule
+\textbf{Stimulation level (ref: low)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Moderate & 0.76 (0.64, 0.92) & $0.004$ \\
+High & 0.79 (0.67, 0.92) & $0.003$ \\
+\textbf{Child's Sex (ref: Male)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Female & 1.26 (1.12, 1.42) & $<0.001$ \\
+\textbf{Area of residence (ref: Urban)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Rural & 0.89 (0.75, 1.05) & $0.182$ \\
+\textbf{Division (ref: Barishal)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Chattogram & 1.47 (1.15, 1.88) & $0.002$ \\
+Dhaka & 2.71 (2.13, 3.46) & $<0.001$ \\
+Khulna & 2.03 (1.59, 2.60) & $<0.001$ \\
+Mymensingh & 2.35 (1.77, 3.12) & $<0.001$ \\
+Rajshahi & 0.97 (0.74, 1.28) & $0.844$ \\
+Rangpur & 3.07 (2.41, 3.91) & $<0.001$ \\
+Sylhet & 0.45 (0.31, 0.66) & $<0.001$ \\
+\textbf{Ever attended any ECE program (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 0.82 (0.72, 0.95) & $0.01$ \\
+\textbf{Mother Education (ref:~Pre-primary or None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Primary & 1.1 (0.88, 1.33) & $0.435$ \\
+Secondary & 1.16 (0.94, 1.44) & $0.146$ \\
+Higher Secondary & 1.1 (0.83, 1.46) & $0.486$ \\
+\textbf{Father Education (ref:~Pre-primary or None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Primary & 0.90 (0.76, 1.06) & $0.219$ \\
+Secondary & 0.79 (0.66, 0.95) & $0.012$ \\
+Higher Secondary & 0.97 (0.76, 1.24) & $0.837$ \\
+\textbf{Mother's functional difficulties (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 2.47 (1.51, 4.03) & $<0.001$ \\
+\textbf{Child's functional difficulties (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 3.72 (2.29, 6.03) & $<0.001$ \\
+\textbf{Wealth index quintile (ref: Poorest)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Poor & 0.84 (0.71, 0.98) & $0.035$ \\
+Middle & 1.01 (0.84, 1.19) & $0.920$ \\
+Rich & 0.96 (0.78, 1.17) & $0.720$ \\
+Richest & 0.97 (0.75, 1.24) & $0.795$ \\
+\textbf{Child disciplinary action (ref: None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Non-Violent & 1.10 (0.73, 1.67) & $0.647$ \\
+Psychological & 0.59 (0.42, 0.83) & $0.003$ \\
+Physical & 0.36 (0.26, 0.49) & $<0.001$ \\
+\textbf{Supervision of Child (ref: Inadequate)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Adequate & 1.10 (0.92, 1.30) & $0.266$ \\
+\bottomrule
+\end{longtable}
+
+\normalsize
+
+\vspace{14mm}
+
+
+Whereas the activities like taking child outside or playing with child, were negatively associated with children being on track of socio-emotional development (OR 0.76; 95% CI: 0.66, 0.88 and OR 0.80; 95% CI: 0.70, 0.93).
+
+Tables (\@ref(logit01)) and (\@ref(logit01)) also show that, among the individual level and socio-demographic characteristics, child's sex, administrative division of Bangladesh, ECE (early childhood program), father education, mother's functional difficulties, child's functional difficulties, child disciplinary action were significant variable in explaining child's socio-emotional development.
+
+
+<!-- ---------------------The 2nd logistic table------------ -->
+
+\newpage
+
+\vspace{10mm}
+
+\fontsize{12}{15}\selectfont
+\begin{longtable}{lcc}
+\caption{Logistic regression model fitted to the binary outcome variable social-emotional development with the level of stimulation activities and other characteristics\label{logit02}}\\ 
+\toprule
+\textbf{Variables} & \textbf{Odds Ratio (95\% CI)~~} & \textbf{p-value} 
+\endfirsthead 
+\multicolumn{3}{c}%
+{{\bfseries Table \thetable\ continued from previous page}} \\
+\toprule
+\endhead
+%
+\toprule
+\endfoot
+%
+\endlastfoot 
+\toprule
+\textbf{Read books or looked at pictures (ref: No)~} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 1.06 (0.90, 1.25) & $0.424$ \\
+\textbf{Told stories to child (ref: No)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 0.99 (0.84, 1.18) & $0.978$ \\
+\textbf{Sang Songs with child (ref: No)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 1.27 (1.09, 1.47) & $0.001$ \\
+\textbf{Took child outside~\textbf{(ref: No)}} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 0.76 (0..66, 0.88) & $<0.001$ \\
+\textbf{Played with child~\textbf{(ref: No)}} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 0.80 (0.70, 0.93) & $0.003$ \\
+\textbf{Named/counted with child~\textbf{(ref: No)}} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Yes & 0.95 (0.82, 1.11) & $0.550$ \\
+\textbf{Child's Sex (ref: Male)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Female & 1.25 (1.11, 1.40) & $<0.001$ \\
+\textbf{Area of residence (ref: Urban)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Rural & 0.89 (0.75, 1.05) & $0.173$ \\
+\textbf{Division (ref: Barishal)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Chattogram & 1.51 (1.18, 1.94) & $0.001$ \\
+Dhaka & 2.82 (2.10, 3.60) & $<0.001$ \\
+Khulna & 2.03 (1.58, 2.60) & $<0.001$ \\
+Mymensingh & 2.30 (1.73, 3.06) & $<0.001$ \\
+Rajshahi & 0.99 (0.75, 1.31) & $0.953$ \\
+Rangpur & 3.24 (2.53, 4.13) & $<0.001$ \\
+Sylhet & 0.44 (0.30, 0.65) & $<0.001$ \\
+\textbf{Ever attended any ECE program (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 0.85 (0.73, 0.98) & $0.036$ \\
+\textbf{Mother Education (ref:~Pre-primary or None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Primary & 1.06 (0.88, 1.33) & $0.546$ \\
+Secondary & 1.11 (0.90, 1.38) & $0.315$ \\
+Higher Secondary & 1.05 (0.80, 1.41) & $0.698$ \\
+\textbf{Father Education (ref:~Pre-primary or None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Primary & 0.88 (0.75, 1.05) & $0.163$ \\
+Secondary & 0.79 (0.66, 0.94) & $0.007$ \\
+Higher Secondary & 0.94 (0.74, 1.21) & $0.682$ \\
+\textbf{Mother's functional difficulties (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 2.40 (1.47, 3.92) & $<0.001$ \\
+\textbf{Child's functional difficulties (ref: Yes)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+No & 3.67 (2.26, 5.95) & $<0.001$ \\
+\textbf{Wealth index quintile (ref: Poorest)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Poor & 0.82 (0.70, 0.97) & $0.020$ \\
+Middle & 0.99 (0.84, 1.18) & $0.993$ \\
+Rich & 0.96 (0.79, 1.18) & $0.714$ \\
+Richest & 0.97 (0.75, 1.25) & $0.795$ \\
+\textbf{Child disciplinary action (ref: None)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Non-Violent & 1.09 (0.72, 1.67) & $0.647$ \\
+Psychological & 0.59 (0.42, 0.84) & $0.003$ \\
+Physical & 0.35 (0.25, 0.49) & $<0.001$ \\
+\textbf{Supervision of Child (ref: Inadequate)} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} \\
+Adequate & 1.07 (0.90, 1.28) & $0.432$ \\
+\bottomrule
+\end{longtable}
+
